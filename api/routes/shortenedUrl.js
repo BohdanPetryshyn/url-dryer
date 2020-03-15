@@ -1,9 +1,9 @@
 const { Router } = require('express');
 
-const { createUrl } = require('../controllers/url');
+const { create } = require('../controllers/shortenedUrl');
 
 const router = Router();
 
-router.post('/', createUrl);
+router.post('/', create);
 
 module.exports = router;
