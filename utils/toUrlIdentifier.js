@@ -1,14 +1,14 @@
-const _ = require('lodash');
+const { range } = require('lodash');
 
 const ALLOWED_CHARACTERS = [
-  // 0 - 9
-  _.range(48, 58),
+  // a - z,
+  ...range(97, 123),
 
   // A - Z
-  _.range(65, 91),
+  ...range(65, 91),
 
-  // a - z,
-  _.range(97, 123),
+  // 0 - 9
+  ...range(48, 58),
 ];
 
 module.exports = number => {
