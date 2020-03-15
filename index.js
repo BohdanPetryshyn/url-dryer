@@ -1,5 +1,5 @@
 require('colors');
-require('dotenv');
+require('dotenv').config();
 require('./data/redis');
 
 const expressApp = require('./setup/expressApp');
