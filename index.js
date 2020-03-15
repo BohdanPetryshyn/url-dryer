@@ -12,7 +12,7 @@ const log = require('./utils/log');
 const PORT = process.env.PORT || 3000;
 
 const app = express();
-app.use(json);
+app.use(json());
 app.use(morgan('tiny'));
 
 app.use('/url', urlRouter);
