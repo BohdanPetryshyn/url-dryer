@@ -1,0 +1,26 @@
+{
+  "name": "url-dryer",
+  "version": "1.0.0",
+  "description": "The basic REST API based URL shortener service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BohdanPetryshyn/url-dryer.git"
+  },
+  "keywords": [
+    "url",
+    "shortener",
+    "mongo",
+    "express",
+    "node"
+  ],
+  "author": "Bohdan Petryshyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BohdanPetryshyn/url-dryer/issues"
+  },
+  "homepage": "https://github.com/BohdanPetryshyn/url-dryer#readme"
+}
