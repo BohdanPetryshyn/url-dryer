@@ -1,0 +1,14 @@
+# Node
+node_modules
+npm-debug.log
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Git
+.git/
+.gitignore
+
+# Sensitive data
+.env
