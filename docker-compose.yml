@@ -21,6 +21,8 @@ services:
       - PORT=3000
     expose:
       - "3000"
+    volumes:
+      - .:/usr/src/app
     networks:
       - app-network
     depends_on:
