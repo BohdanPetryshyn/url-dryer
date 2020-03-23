@@ -6,4 +6,6 @@ exports.redirect = async (req, res, next) => {
   const originalUrl = await goService.getOriginalUrl(originalUrlId);
 
   res.redirect(originalUrl);
+
+  goService.registerRedirect(originalUrlId);
 };
