@@ -1,8 +1,12 @@
 const shortenedUrlService = require('../../service/shortenedUrl');
 const getShortenedUrl = require('../../utils/getShortenedUrl');
+const validateUrl = require('../../utils/validateUrl');
+const passErrors = require('../../utils/error/passErrors');
 
-exports.create = async (req, res, next) => {
+exports.create = passErrors(async (req, res, next) => {
   const { url } = req.body;
+
+  validateUrl(url);
 
   const originalUrlId = await shortenedUrlService.saveOriginalUrl(url);
 
@@ -16,4 +20,4 @@ exports.create = async (req, res, next) => {
     id: originalUrlId,
     shortenedUrl,
   });
-};
+});
