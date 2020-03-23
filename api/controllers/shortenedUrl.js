@@ -21,3 +21,11 @@ exports.create = passErrors(async (req, res, next) => {
     shortenedUrl,
   });
 });
+
+exports.getInfo = passErrors(async (req, res, next) => {
+  const { id } = req.params;
+
+  const shortenedUrlInfo = await shortenedUrlService.getShortenedUrlInfo(id);
+
+  res.status(200).json(shortenedUrlInfo);
+});

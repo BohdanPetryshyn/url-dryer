@@ -6,4 +6,6 @@ const router = Router();
 
 router.post('/', shortenedUrlController.create);
 
+router.get('/:id', shortenedUrlController.getInfo);
+
 module.exports = router;
